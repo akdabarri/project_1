@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7; /* Biru muda */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0277BD; /* Biru lebih gelap */
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.1em;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #185a1c; /* Warna hijau lebih gelap saat hover */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #D32F2F; /* Warna merah untuk timer */
+    font-weight: bold;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}

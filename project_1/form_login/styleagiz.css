@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 80px; /* Sesuaikan ukuran logo */
+    height: 80px; /* Sesuaikan ukuran logo */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 32px;
+    color: #e1ecf0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar menutupi area background tanpa merusak proporsi */
+    object-position: center; /* Memusatkan gambar secara horizontal dan vertikal */
+}
+
+
+.login-container {
+    position: relative;
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: #333;
+}
+
+.left-curved-background {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 300px;
+    height: 100%;
+    background: #4186ec;
+    border-radius: 50% 0 0 50%;
+    z-index: -1;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.login-form {
+    padding: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -10px;
+}
+
+.remember-me label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.login-btn:hover {
+    background-color: #4781ff;
+}

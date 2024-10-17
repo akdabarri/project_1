@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Kesadaran Berkendara</title>
+    <link rel="stylesheet" href="style_tes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">02:00</div>
+        <div class="question" id="question-container">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+        </div>
+        <div class="navigation">
+            <button id="prevBtn" class="btn" onclick="previousQuestion()">Kembali</button>
+            <button id="nextBtn" class="btn" onclick="nextQuestion()">Lanjut</button>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="mct.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script_tes.js"></script>
+</body>
+</html>

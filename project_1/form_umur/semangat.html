@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semangat!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ff000079; /* Warna merah pastel */
+            color: #C62828; /* Warna merah yang lebih dalam */
+            text-align: center;
+            padding-top: 50px;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            background-color: #FFCDD2; /* Merah pastel */
+            border: none;
+            color: #C62828;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #EF9A9A; /* Warna hover merah yang sedikit lebih gelap */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Semangat!</h1>
+    <p>Silakan coba lagi jika Anda sudah cukup umur 🥹😜🤟</p>
+    <button id="motivasiBtn">Dapatkan Motivasi</button>
+
+    <script>
+        const motivasiBtn = document.getElementById('motivasiBtn');
+        const quotes = [
+            'Wah, kamu berhasil bikin kegagalan jadi hobi. Pasti ada hadiah khusus buat itu!',
+            'Ingat, sukses itu bukan tujuan, tapi perjalanan. Nikmati setiap detiknya, meski penuh rintangan. PAHAM!',
+            'Kadang kita harus jatuh dulu untuk bangkit lebih kuat. Jadi, jatuhlah dengan gaya! PAHAM!',
+            'Keberhasilan adalah milik mereka yang tidak pernah menyerah!'
+        ];
+
+        motivasiBtn.addEventListener('click', function() {
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            alert(randomQuote);
+        });
+    </script>
+</body>
+</html>
